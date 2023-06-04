@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort String</title>
+    <script>
+        function sortString(string) {
+            var sortedString = string.toLowerCase().split("").sort().join("");
+            return sortedString;
+        }
+
+        // Example usage
+        var string = "webmaster";
+        var sortedString = sortString(string);
+        console.log(sortedString);
+
+        // Display sorted string on the web page
+        window.onload = function() {
+            document.getElementById("result").textContent = sortedString;
+        };
+    </script>
+</head>
+<body>
+    <h1>Sorted String:</h1>
+    <p id="result"></p>
+</body>
+</html>
